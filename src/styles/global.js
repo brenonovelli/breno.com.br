@@ -55,7 +55,7 @@ const GlobalStyles = createGlobalStyle`
     background: var(--background);
     line-height: 1;
     font-size: 100%;
-    font-family: 'Fira Code', 'Source Code Pro', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Fira Code', monospace, 'Source Code Pro', serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   img {
     display: block;

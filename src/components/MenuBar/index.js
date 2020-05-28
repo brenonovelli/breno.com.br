@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 
 import {
   Bulb as Light,
-  SearchAlt2 as Search,
   UpArrowAlt as Arrow,
 } from 'styled-icons/boxicons-regular/';
 
@@ -43,18 +42,6 @@ const MenuBar = () => {
             <Home />
           </S.MenuBarItem>
         </S.MenuBarLink>
-        {/* <S.MenuBarLink
-          to="/search/"
-          cover
-          direction="right"
-          bg={getThemeColor()}
-          duration={0.6}
-          title="Pesquisar"
-        >
-          <S.MenuBarItem>
-            <Search />
-          </S.MenuBarItem>
-        </S.MenuBarLink> */}
       </S.MenuBarGroup>
       <S.MenuBarGroup>
         <S.MenuBarItem
