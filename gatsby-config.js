@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Breno Novelli`,
     position: `Design e programação`,
-    description: `Pai na [B&G]MN. Em 2007 eu era web designer. Hoje não sei. Desenvolvedor frontend? Fullstack? UI? UX? Designer? Diretor de arte?`,
+    description: `Pai na [B&G]MN. Em 2007 eu era web designer. Hoje não sei. Desenvolvedor frontend? Fullstack? UI? UX? Designer? Diretor de arte? breno@breno.com.br`,
     author: `@brenonovelli`,
     siteUrl: `https://www.breno.com.br`,
     // siteUrl: `http://localhost:8000`,

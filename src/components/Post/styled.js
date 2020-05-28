@@ -39,7 +39,7 @@ export const PostDate = styled.p`
   font-size: 1.1rem;
   font-weight: 100;
   padding: 0 1.4rem;
-  color: rgb(104, 253, 254);
+  color: var(--blueTerminal);
   ${media.lessThan('large')`
     padding: 0 1rem;
   `}

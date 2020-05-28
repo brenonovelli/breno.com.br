@@ -13,6 +13,7 @@ export const MenuBarWrapper = styled.aside`
   right: 0;
   width: 3.75rem;
   transition: background 0.5s;
+  background: var(--background);
 
   ${media.lessThan('large')`
     border-top: 1px solid var(--borders);

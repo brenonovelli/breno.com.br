@@ -28,7 +28,9 @@ const PostItem = ({
           <S.PostItemDate>
             {date} <span>on</span>
           </S.PostItemDate>
-          <S.PostItemCategory> {category}</S.PostItemCategory>
+          <S.PostItemCategory>
+            <span></span> {category}
+          </S.PostItemCategory>
         </S.PostItemInfoHeader>
         <S.PostItemTitle>
           <span>{`>`}</span> {title}

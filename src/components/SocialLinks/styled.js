@@ -6,7 +6,11 @@ export const SocialLinksWrapper = styled.nav`
   width: 100%;
 
   ${media.lessThan('large')`
-    display: none;
+    /* display: none; */
+    border: solid var(--borders);
+    border-width: 1px 0;
+    padding: .5rem 0;
+    margin: 1rem 0;
   `}
 `;
 

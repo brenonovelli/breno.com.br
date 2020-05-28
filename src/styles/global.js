@@ -5,6 +5,14 @@ const GlobalStyles = createGlobalStyle`
    v2.0 | 20110126
    License: none (public domain)
   */
+
+ @font-face {
+  font-family: 'FiraCode';
+  font-style: normal;
+  font-weight: 300 700;
+  src: url(https://fonts.gstatic.com/l/font?kit=uU9NCBsR6Z2vfE9aq3bR396EilOkbTs60rROVzO-VaGJw1doRfQguUrTlaF_NV4&skey=33bc0af28fd31bc7&v=v8) format('woff2');
+}
+
   html, body, div, span, applet, object, iframe,
   h1, h2, h3, h4, h5, h6, p, blockquote, pre,
   a, abbr, acronym, address, big, cite, code,
@@ -72,6 +80,7 @@ const GlobalStyles = createGlobalStyle`
     --background: #011016;
     --white: #fff;
     --black: #222;
+    --blueTerminal: rgb(104, 253, 254);
   }
   body.light {
     --borders: #dedede;
@@ -82,6 +91,7 @@ const GlobalStyles = createGlobalStyle`
     --background: #fff;
     --white: #fff;
     --black: #222;
+    --blueTerminal: rgb(0,136,210);
   }
 `;
 export default GlobalStyles;

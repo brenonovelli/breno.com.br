@@ -19,16 +19,18 @@ export const PostItemWrapper = styled.section`
   display: flex;
   padding: 2rem 3rem;
   width: 100%;
+
   body#grid & {
     border: none;
     padding: 2rem 1rem;
     flex-direction: column;
     justify-content: center;
   }
+
   ${media.lessThan('large')`
     align-items: flex-start;
     flex-direction: column;
-    padding: 2rem 1rem;
+    padding: 1rem;
   `}
 `;
 
@@ -37,7 +39,7 @@ export const PostItemTag = styled.div`
   background: ${props =>
     props.background ? props.background : 'var(--highlight)'};
   border-radius: 50%;
-  padding: .5rem;
+  padding: 0.5rem;
   /* color: #fff;
   display: flex;
   font-size: 1.3rem;
@@ -45,15 +47,11 @@ export const PostItemTag = styled.div`
   justify-content: center;
   min-height: 90px;
   min-width: 90px;
-  text-transform: uppercase;
+  text-transform: uppercase;*/
   ${media.lessThan('large')`
     border-radius: 0;
-    font-size: 1rem;
-    min-height: auto;
-    min-width: auto;
     padding: .2rem .5rem;
-    margin-bottom: .7rem;
-  `} */
+  `}
   body#grid & {
     margin-bottom: 1.5rem;
   }
@@ -75,11 +73,11 @@ export const PostItemInfoHeader = styled.div`
 
 export const PostItemDate = styled.time`
   font-size: 0.875rem;
-  color: rgb(104, 253, 254);
+  color: var(--blueTerminal);
   font-weight: 600;
   margin-right: 0.5rem;
   span {
-    color: white;
+    color: var(--postColor);
   }
 `;
 
@@ -87,6 +85,9 @@ export const PostItemCategory = styled.div`
   font-size: 0.875rem;
   color: rgb(254, 123, 252);
   font-weight: 600;
+  span {
+    font-family: 'FiraCode';
+  }
 `;
 
 export const PostItemTitle = styled.h1`

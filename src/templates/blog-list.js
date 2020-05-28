@@ -43,14 +43,14 @@ const BlogList = ({ data, pageContext: { currentPage, numPages } }) => {
         )}
       </S.ListWrapper>
 
-      <Pagination
+      {/* <Pagination
         isFirst={isFirst}
         isLast={isLast}
         currentPage={currentPage}
         numPages={numPages}
         prevPage={prevPage}
         nextPage={nextPage}
-      />
+      /> */}
     </Layout>
   );
 };
