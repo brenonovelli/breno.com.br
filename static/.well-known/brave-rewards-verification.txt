@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: breno.com.br
+Token: 511f64f9dd1c4584ac7c6644d146ce79d7ce14b03baf7d140d5ef7624eeae509
