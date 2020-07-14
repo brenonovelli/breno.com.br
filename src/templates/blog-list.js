@@ -59,6 +59,7 @@ export const query = graphql`
   query PostList($skip: Int!, $limit: Int!) {
     allMarkdownRemark(
       sort: { fields: frontmatter___date, order: DESC }
+      filter: { frontmatter: { category: { ne: "benove" } } }
       limit: $limit
       skip: $skip
     ) {

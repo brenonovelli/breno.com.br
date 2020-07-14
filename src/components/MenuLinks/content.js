@@ -4,8 +4,8 @@ const links = [
     url: '/',
   },
   {
-    label: 'Sobre Mim',
-    url: '/about/',
+    label: 'Benove Studio',
+    url: '/benove/',
   },
 ];
 

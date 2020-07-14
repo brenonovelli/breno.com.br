@@ -15,11 +15,18 @@ exports.onCreateNode = ({ node, getNode, actions }) => {
     });
 
     // Creates new query'able field with name of 'slug'
-    createNodeField({
-      node,
-      name: 'slug',
-      value: `/${slug.slice(12)}`,
-    });
+    createNodeField(
+      {
+        node,
+        name: 'slug',
+        value: `/${slug.slice(12)}`,
+      },
+      {
+        node,
+        name: 'featuredImage',
+        value: path,
+      }
+    );
   }
 };
 

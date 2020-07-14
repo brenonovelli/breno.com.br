@@ -93,6 +93,7 @@ const GlobalStyles = createGlobalStyle`
     --black: #222;
     --blueTerminal: rgb(0,136,210);
   }
+
 `;
 export default GlobalStyles;
 

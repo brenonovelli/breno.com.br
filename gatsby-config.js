@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Breno Novelli`,
     position: `Design e programação`,
-    description: `Pai na [B&G]MN. Em 2007 eu era web designer. Hoje não sei. Desenvolvedor frontend? Fullstack? UI? UX? Designer? Diretor de arte? breno@breno.com.br`,
+    description: `Pai na [B&G]MN. Trabalho desde 2007 como desenvolvedor frontend, fullstack, UI/UX designer e diretor de arte. breno@breno.com.br`,
     author: `@brenonovelli`,
     siteUrl: `https://www.breno.com.br`,
     // siteUrl: `http://localhost:8000`,
@@ -22,12 +22,11 @@ module.exports = {
         path: `${__dirname}/static/assets/img`,
       },
     },
-
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images`,
+        path: `${__dirname}/static/assets/img`,
       },
     },
 
