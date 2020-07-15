@@ -13,7 +13,7 @@ const LayoutBenove = ({ children }) => {
     <S.LayoutWrapper>
       <GlobalStyles />
       <TransitionPortal level="top">
-        <Sidebar />
+        <Sidebar benove />
       </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
       <TransitionPortal level="top">

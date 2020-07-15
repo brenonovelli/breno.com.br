@@ -17,8 +17,9 @@ export const PostTitle = styled.h1`
   font-weight: 700;
   padding: 0 1.4rem;
   margin: 1rem auto;
+
   ${media.lessThan('large')`
-    font-size: 2.8rem;
+    font-size: 2rem;
     line-height: 1.1;
     padding: 0 1rem;
   `}
@@ -42,6 +43,7 @@ export const PostDate = styled.p`
   color: var(--blueTerminal);
   ${media.lessThan('large')`
     padding: 0 1rem;
+    font-size: .875rem;
   `}
 `;
 
@@ -139,6 +141,7 @@ export const MainContent = styled.section`
   }
   h1 {
     font-size: 2.8rem;
+
     ${media.lessThan('large')`
       font-size: 1.875rem;
     `}

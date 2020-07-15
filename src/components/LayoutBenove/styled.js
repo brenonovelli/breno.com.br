@@ -31,27 +31,39 @@ export const Header = styled.header`
   color: var(--postColor);
   padding: 2rem 3rem;
 
+  ${media.lessThan('large')`
+    padding: 0 .5rem;
+  `}
+
   body#grid & {
-    padding: 2rem 1rem;
-  }
-
-  h1,
-  p {
-    padding: 0 1.4rem;
-    margin: 1rem auto;
-
-    ${media.lessThan('large')`
-      padding: 0 1rem;
+    ${media.greaterThan('large')`
+      padding: 2rem 1rem;
     `}
   }
 
   h1 {
     font-size: 4rem;
     font-weight: 700;
+    padding: 0 1.4rem;
+    margin: 1rem auto;
 
     ${media.lessThan('large')`
-      font-size: 2.8rem;
+      font-size: 2rem;
       line-height: 1.1;
+      padding: 0 1rem;
+      margin: 1rem auto 0;
+    `}
+  }
+
+  p {
+    padding: 0 1.4rem;
+    margin: 1rem auto;
+    line-height: 1.25;
+    color: var(--texts);
+
+    ${media.lessThan('large')`
+      margin: 0 auto 1rem;
+      padding: 0 1rem;
     `}
   }
 

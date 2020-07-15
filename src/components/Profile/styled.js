@@ -6,6 +6,11 @@ export const ProfileWrapper = styled.section`
   color: var(--texts);
   display: flex;
   flex-direction: column;
+
+  ${media.lessThan('large')`
+    padding-top: 1rem;
+    order: 1;
+  `}
 `;
 
 export const ProfileLink = styled(AniLink)`

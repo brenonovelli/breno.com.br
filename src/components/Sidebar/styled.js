@@ -10,10 +10,11 @@ export const SidebarWrapper = styled.aside`
   padding: 2rem;
   text-align: left;
   width: 20rem;
+  background: var(--background);
 
   ${media.lessThan('large')`
     height: auto;
-    padding: 1rem;
+    padding: 0 1rem 1rem;
     width: 100%;
   `}
 `;

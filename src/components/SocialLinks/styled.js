@@ -6,11 +6,10 @@ export const SocialLinksWrapper = styled.nav`
   width: 100%;
 
   ${media.lessThan('large')`
-    /* display: none; */
+    order: 0;
     border: solid var(--borders);
-    border-width: 1px 0;
+    border-width: 0 0 1px;
     padding: .5rem 0;
-    margin: 1rem 0;
   `}
 `;
 
@@ -19,14 +18,23 @@ export const SocialLinksList = styled.ul`
   display: flex;
   justify-content: space-between;
   list-style: none;
+
+  ${media.lessThan('large')`
+    justify-content: space-evenly;
+  `}
 `;
 
-export const SocialLinksItem = styled.li``;
+export const SocialLinksItem = styled.li`
+  & + li {
+    margin-left: 2rem;
+  }
+`;
 
 export const SocialLinksLink = styled.a`
   color: var(--texts);
   text-decoration: none;
   transition: color 0.5s;
+
   &:hover {
     color: var(--highlight);
   }
@@ -36,4 +44,9 @@ export const IconWrapper = styled.div`
   fill: #bbb;
   width: 30px;
   height: 30px;
+
+  ${media.lessThan('large')`
+    width: 20px;
+    height: 20px;
+  `};
 `;

@@ -13,23 +13,31 @@ export const PostBenoveItemWrapper = styled.section`
   width: 100%;
 
   body#grid & {
-    border: none;
-    padding: 2rem 1rem;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
+    ${media.greaterThan('large')`
+      border: none;
+      padding: 2rem 1rem;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+    `}
   }
 
   ${media.lessThan('large')`
     align-items: flex-start;
     flex-direction: column;
     padding: 1rem;
+    padding-bottom: 3rem;
   `}
 `;
 
 export const PostBenoveItemFeaturedImage = styled(Img)`
   width: 100%;
   background: var(--texts);
+
+  ${media.lessThan('large')`
+    margin-bottom: .5rem;
+  `}
+
   body#list & {
     max-width: 480px;
   }
@@ -40,12 +48,10 @@ export const PostBenoveItemInfo = styled.div`
   flex-direction: column;
   width: 100%;
 
-  ${media.lessThan('large')`
-    margin: 0;
-  `}
-
   body#list & {
-    margin-left: 1.5rem;
+    ${media.greaterThan('large')`
+      margin-left: 1.5rem;
+    `}
   }
 `;
 
@@ -56,8 +62,10 @@ export const PostBenoveItemTitle = styled.h1`
   color: var(--postColor);
 
   body#grid & {
-    line-height: 1.1;
-    margin: 0.8rem 0 0.5rem;
+    ${media.greaterThan('large')`
+      line-height: 1.1;
+      margin: 0.8rem 0 0.5rem;
+    `}
   }
 
   span {
@@ -72,6 +80,10 @@ export const PostBenoveItemDescription = styled.p`
   line-height: 1.2;
   color: var(--texts);
   margin-bottom: 1rem;
+
+  ${media.lessThan('large')`
+    margin-bottom: .5rem;
+  `}
 `;
 
 export const PostBenoveItemLinks = styled.nav`
