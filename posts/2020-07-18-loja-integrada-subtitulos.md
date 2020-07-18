@@ -4,7 +4,7 @@ title: Subtítulo na home da Loja Integrada
 description: Uma forma rápida de inserir um subtítulos nos seus títulos da home da sua loja integrada
 category: loja-integrada
 background: 'rgba(255,84,20)'
-image: '/assets/img/loja-integrada/subtitle-on-home-example.png'
+image: '/assets/img/loja-integrada/subtitle-on-home-cover.png'
 ---
 
 Um dos pedidos mais frequentes na comunidade da Loja Integrada é sobre como colocar subtítulo na home. Usando um pouco de javascript conseguimos resolver isso.
