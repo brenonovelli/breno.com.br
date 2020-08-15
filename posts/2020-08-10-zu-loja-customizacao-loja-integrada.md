@@ -15,7 +15,7 @@ A Zu Loja é uma marca que já atendo desde o começo. Participei da escolha do 
 
 Tem um vídeo onde eu uso a Zu Loja para mostrar como é possível ter uma Loja Integrada no plano grátis e mesmo assim ter um layout exclusivo, uma loja de primeira.
 
-`youtube:ehfJZ_OFVws`
+`youtube:HDmAm9r7W84`
 
 ## Missão
 
