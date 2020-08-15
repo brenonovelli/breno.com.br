@@ -61,7 +61,7 @@ Detalhe da parte de descrição do produto
 
 Cada detalhe da página recebeu uma atenção especial.
 
-![05_Rodape](/assets/img/zu-loja/05_Rodape.png)
+![05_Rodape](/assets/img/zu-loja/05_Rodape_web.png)
 
 ## 🤟 Sim, tem muito mais
 
