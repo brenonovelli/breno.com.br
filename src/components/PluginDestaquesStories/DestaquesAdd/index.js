@@ -37,7 +37,9 @@ const DestaquesAdd = ({ handleSubmit }) => {
               <Label htmlFor="badge">Badge</Label>
               <Input id="badge" type="text" name="badge" />
             </FormGroup>
-            <FormGroup />
+            <FormGroup>
+              <Button type="submit">Inserir</Button>
+            </FormGroup>
           </Form>
         </>
       ) : (
