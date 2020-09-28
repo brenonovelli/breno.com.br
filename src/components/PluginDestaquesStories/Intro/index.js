@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Cart, Cog } from 'styled-icons/boxicons-regular/';
+import { Cog } from 'styled-icons/boxicons-regular/';
 import { Binoculars } from 'styled-icons/boxicons-solid/';
 import { Youtube } from 'styled-icons/boxicons-logos/';
 
@@ -17,6 +17,7 @@ const Intro = ({ scrollToConfigSection }) => (
       <dd>Fácil configuração. Veja o formulário abaixo.</dd>
       <dd>Dois locais de exibição: corpo ou cabeçalho.</dd>
       <dd>Escolha exibir apenas em dispositivos móveis.</dd>
+      <dd>Tenha acesso às novas funcionalidades.</dd>
     </dl>
 
     <dl>
@@ -35,6 +36,13 @@ const Intro = ({ scrollToConfigSection }) => (
         .
       </dd>
       <dd>Tags ajudam a passar o recado rápido.</dd>
+    </dl>
+
+    <dl>
+      <dt>Em breve</dt>
+      <dd>Badges com cores próprias.</dd>
+      <dd>Ordem randômica dos destaques.</dd>
+      <dd>Cronômetro nos badges. (Quando bater 50 vendas)</dd>
     </dl>
 
     <FormGroup>
@@ -58,7 +66,7 @@ const Intro = ({ scrollToConfigSection }) => (
     <hr />
 
     <FormGroup>
-      <h2>Quer configurar ou apenas testar?</h2>
+      <h2>Quer configurar ou testar?</h2>
       <Button type="button" onClick={scrollToConfigSection}>
         <Cog />
         Quero configurar

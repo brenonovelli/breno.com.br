@@ -54,6 +54,10 @@ const Values = () => (
         script e seu token de uso. Imagens, configurações e ajustes além dos
         disponibilizados nessa página não estão inclusos no valor de R$39,99.
       </p>
+      <p>
+        Esse plugin é feito com JavaScript moderno. Pode não ter suporte para
+        alguns navegadores antigos.
+      </p>
     </div>
   </>
 );

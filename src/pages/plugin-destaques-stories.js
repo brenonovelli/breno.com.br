@@ -80,16 +80,16 @@ const PluginDestaquesStories = () => {
       <S.Header>
         <h1>Stories Destaques</h1>
         <p>
-          Exiba destaques no famoso formato usado pelos principais app.{' '}
+          Exiba destaques no famoso formato usado pelos principais apps.{' '}
           <span role="img" aria-label="ícone foguete">
             🚀
           </span>
           <br />
-          Uma forma que seu usuário já está pra lá de acostumado: miniaturas do
+          Uma forma que seu usuário já está pra lá de acostumado: miniaturas de
           stories.
         </p>
-        <p className="feature">
-          Essa é uma extensão para você usar na sua{' '}
+        <p>
+          Lembre-se: essa é uma extensão para você usar na sua{' '}
           <a
             href="https://www.lojaintegrada.com.br"
             target="_blank"
@@ -98,7 +98,19 @@ const PluginDestaquesStories = () => {
             Loja Integrada
           </a>
           .<br />
-          Em breve em outras plataformas. Em qual você gostaria de tê-la?
+          Posso adaptar para outras plataformas. Em qual você gostaria de tê-la?
+        </p>
+        <p>
+          Se quiser saber um pouco mais da minha relação com a Loja Integrada,
+          esse é{' '}
+          <a
+            href="https://comunidade.lojaintegrada.com.br/u/brenonovelli"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            meu perfil
+          </a>{' '}
+          na comunidade.
         </p>
       </S.Header>
 
