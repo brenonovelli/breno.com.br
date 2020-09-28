@@ -17,9 +17,21 @@ const PreviewCode = ({ options, data, copied, setCopied }) => {
     zoomNoHover: ${options.zoomNoHover},
     local: "${options.local}",
     instagramColor: ${options.instagramColor},
-    corPrincipal: ${options.corPrincipal},
-    corControles: ${options.corControles},
-    corSetasControles: ${options.corSetasControles},
+    corPrincipal: ${
+      options.corPrincipal && options.corPrincipalChange
+        ? `"${options.corPrincipal}"`
+        : null
+    },
+    corControles: ${
+      options.corControles && options.corControlesChange
+        ? `"${options.corControles}"`
+        : null
+    },
+    corSetasControles: ${
+      options.corSetasControles && options.corSetasControlesChange
+        ? `"${options.corSetasControles}"`
+        : null
+    },
   };
 
   const storiesItem = [${data.map(

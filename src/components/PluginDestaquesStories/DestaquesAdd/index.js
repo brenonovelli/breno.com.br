@@ -9,6 +9,7 @@ import { Button } from '../../Button';
 const DestaquesAdd = ({ handleSubmit }) => {
   const formRef = useRef(null);
   const [open, setOpen] = useState(false);
+
   return (
     <>
       {open ? (
