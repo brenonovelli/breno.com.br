@@ -6,7 +6,7 @@ import getThemeColor from '../../utils/getThemeColor';
 import Avatar from '../Avatar';
 import * as S from './styled';
 
-const Profile = () => {
+const Profile = ({ template }) => {
   const {
     site: {
       siteMetadata: { title, position, description },
@@ -43,4 +43,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export { Profile };

@@ -14,7 +14,10 @@ export const SidebarWrapper = styled.aside`
 
   ${media.lessThan('large')`
     height: auto;
-    padding: 0 1rem 1rem;
     width: 100%;
+    transition:  .5s ease-in-out all;
+    overflow: hidden;
+    padding: ${props => (props.goingUp ? '0 1rem 1rem' : '0 1rem')};
+    max-height: ${props => (props.goingUp ? '6.75rem' : '0')};
   `}
 `;

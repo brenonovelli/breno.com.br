@@ -23,7 +23,7 @@ export const LayoutMain = styled.section`
   }
 
   ${media.lessThan('large')`
-    padding: 7rem 0 3rem 0;
+  padding: 5rem 0 3.25rem 0;
   `}
 `;
 

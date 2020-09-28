@@ -1,9 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-import {
-  Bulb as Light,
-  UpArrowAlt as Arrow,
-} from 'styled-icons/boxicons-regular/';
+import { Bulb as Light, Menu } from 'styled-icons/boxicons-regular/';
 
 import { Home, Grid } from 'styled-icons/boxicons-solid/';
 import { ThList as List } from 'styled-icons/typicons';
@@ -12,7 +9,7 @@ import getThemeColor from '../../utils/getThemeColor';
 
 import * as S from './styled';
 
-const MenuBar = () => {
+const MenuBar = ({ handleMenu }) => {
   const [theme, setTheme] = useState(null);
   const [display, setDisplay] = useState(null);
 
@@ -62,8 +59,9 @@ const MenuBar = () => {
         >
           {isListMode ? <Grid /> : <List />}
         </S.MenuBarItem>
-        <S.MenuBarItem title="Ir para o Topo">
-          <Arrow />
+
+        <S.MenuBarItem onClick={handleMenu}>
+          <Menu />
         </S.MenuBarItem>
       </S.MenuBarGroup>
     </S.MenuBarWrapper>

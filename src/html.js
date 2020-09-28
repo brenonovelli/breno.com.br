@@ -15,6 +15,10 @@ export default function HTML(props) {
           href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://unpkg.com/dracula-prism/css/dracula-prism.css"
+        />
         {props.headComponents}
       </head>
       <body {...props.bodyAttributes} className="dark">
@@ -34,6 +38,7 @@ export default function HTML(props) {
               try {
                 preferredTheme = localStorage.getItem('theme');
               } catch (err) { }
+
               window.__setPreferredTheme = function(newTheme) {
                 setTheme(newTheme);
                 try {
@@ -41,7 +46,9 @@ export default function HTML(props) {
                 } catch (err) {}
               }
               setTheme(preferredTheme || 'dark');
+
               window.__onDisplayChange = function() {};
+
               function setDisplay(newDisplay) {
                 window.__display = newDisplay;
                 preferredDisplay = newDisplay;
@@ -52,12 +59,14 @@ export default function HTML(props) {
               try {
                 preferredDisplay = localStorage.getItem('display');
               } catch (err) { }
+
               window.__setPreferredDisplay = function(newDisplay) {
                 setDisplay(newDisplay);
                 try {
                   localStorage.setItem('display', newDisplay);
                 } catch (err) {}
               }
+              
               setDisplay(preferredDisplay || 'list');
             })();
           `,

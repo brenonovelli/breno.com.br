@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { TransitionPortal } from 'gatsby-plugin-transition-link';
 
@@ -9,16 +9,19 @@ import GlobalStyles from '../../styles/global';
 import * as S from './styled';
 
 const LayoutBenove = ({ children }) => {
+  const [openMenu, setOpenMenu] = useState(false);
+
+  const handleMenu = () => setOpenMenu(!openMenu);
   return (
     <S.LayoutWrapper>
-      <GlobalStyles />
       <TransitionPortal level="top">
-        <Sidebar benove />
+        <Sidebar openMenu={openMenu} template="benove" />
       </TransitionPortal>
       <S.LayoutMain>{children}</S.LayoutMain>
       <TransitionPortal level="top">
-        <MenuBar />
+        <MenuBar handleMenu={handleMenu} />
       </TransitionPortal>
+      <GlobalStyles />
     </S.LayoutWrapper>
   );
 };
