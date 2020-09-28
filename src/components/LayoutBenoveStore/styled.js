@@ -227,7 +227,13 @@ export const Section = styled.section`
     }
   }
 
-  ${media.greaterThan('large')`
+  ${media.greaterThan('huge')`
+    .marvel-device.macbook {
+        zoom: 1;
+      }
+  `}
+
+  ${media.lessThan('huge')`
     .marvel-device.macbook {
         zoom: .85;
       }

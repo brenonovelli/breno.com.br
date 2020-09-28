@@ -5,7 +5,7 @@ import { Container } from './styles';
 
 const DragableItem = ({ children }) => (
   <Container>
-    <DragIndicator />
+    <DragIndicator className="handle" />
     {children}
   </Container>
 );

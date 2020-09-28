@@ -4,6 +4,7 @@ export const defaultOptions = {
   apenasNaHome: false,
   zoomNoHover: false,
   local: 'cabecalho',
+  instagramColor: false,
   corPrincipal: null,
   corControles: null,
   corSetasControles: null,

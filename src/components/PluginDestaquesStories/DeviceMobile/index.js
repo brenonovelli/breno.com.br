@@ -16,6 +16,9 @@ const DeviceMobile = ({ options, data }) => (
           <StoriesLI
             mobile
             data={data}
+            local={options.local}
+            instagramColor={options.instagramColor}
+            zoomNoHover={options.zoomNoHover}
             corPrincipal={
               options.corPrincipalChange ? options.corPrincipal : null
             }

@@ -47,7 +47,7 @@ export const Container = styled.section`
         text-align: center;
         margin: 0 4px;
         width: 74px;
-        padding: 5px;
+        padding: 4px;
         position: relative;
         text-decoration: none;
 
@@ -70,15 +70,65 @@ export const Container = styled.section`
           border-radius: 50%;
         }
 
+        &.instagramColor {
+          &:before,
+          &:after {
+            z-index: 0;
+          }
+
+          &:before {
+            background: #f09433;
+            background: -moz-linear-gradient(
+              45deg,
+              #f09433 0%,
+              #e6683c 25%,
+              #dc2743 50%,
+              #cc2366 75%,
+              #bc1888 100%
+            );
+            background: -webkit-linear-gradient(
+              45deg,
+              #f09433 0%,
+              #e6683c 25%,
+              #dc2743 50%,
+              #cc2366 75%,
+              #bc1888 100%
+            );
+            background: linear-gradient(
+              45deg,
+              #f09433 0%,
+              #e6683c 25%,
+              #dc2743 50%,
+              #cc2366 75%,
+              #bc1888 100%
+            );
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+            border: 0;
+          }
+
+          &:after {
+            content: '';
+            background-color: #fff;
+            width: calc(100% - 4px);
+            padding-top: calc(100% - 4px);
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            border-radius: 50%;
+          }
+        }
+
         img {
-          width: 64px;
-          height: 64px;
+          width: 66px;
+          height: 66px;
           border-radius: 50%;
           object-fit: cover;
           margin-bottom: 8px;
+          z-index: 1;
         }
 
         .badge {
+          z-index: 2;
           position: absolute;
           top: 0;
           right: 0;
@@ -97,6 +147,7 @@ export const Container = styled.section`
         }
 
         .tag {
+          z-index: 2;
           position: absolute;
           top: 50px;
           max-width: 100%;
@@ -160,8 +211,8 @@ export const Container = styled.section`
         }
 
         img {
-          width: 84px;
-          height: 84px;
+          width: 86px;
+          height: 86px;
         }
       }
     }

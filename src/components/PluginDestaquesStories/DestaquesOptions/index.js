@@ -66,7 +66,17 @@ const DestaquesOptions = ({
             Zoom ao passar o mouse
           </Label>
         </FormGroup>
-
+        <FormGroup className="border inline">
+          <Label htmlFor="instagramColor">
+            <InputToggle
+              id="instagramColor"
+              name="instagramColor"
+              checked={options.instagramColor}
+              onChange={handleChange}
+            />
+            Usar cores do Instagram nas bordas
+          </Label>
+        </FormGroup>
         <FormGroup className="border inline">
           <Label htmlFor="corPrincipalChange">
             <InputToggle

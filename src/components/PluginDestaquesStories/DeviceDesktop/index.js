@@ -15,6 +15,9 @@ const DeviceDesktop = ({ options, data }) => (
       {options.local === 'cabecalho' && (
         <StoriesLI
           data={data}
+          local={options.local}
+          instagramColor={options.instagramColor}
+          zoomNoHover={options.zoomNoHover}
           corPrincipal={
             options.corPrincipalChange ? options.corPrincipal : null
           }

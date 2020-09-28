@@ -16,6 +16,7 @@ const PreviewCode = ({ options, data, copied, setCopied }) => {
     apenasNaHome: ${options.apenasNaHome},
     zoomNoHover: ${options.zoomNoHover},
     local: "${options.local}",
+    instagramColor: ${options.instagramColor},
     corPrincipal: ${options.corPrincipal},
     corControles: ${options.corControles},
     corSetasControles: ${options.corSetasControles},

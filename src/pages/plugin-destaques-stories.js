@@ -113,9 +113,11 @@ const PluginDestaquesStories = () => {
         <Values />
       </S.Section>
 
-      <S.Section className="desktop">
-        <DeviceDesktop data={data} options={options} />
-      </S.Section>
+      {!options.apenasNoMobile && (
+        <S.Section className="desktop">
+          <DeviceDesktop data={data} options={options} />
+        </S.Section>
+      )}
 
       <S.Section className="form" ref={sectionConfigRef}>
         <header>

@@ -8,12 +8,15 @@ const StoriesLI = ({
   corPrincipal,
   corControles,
   corSetasControles,
+  instagramColor,
+  local,
+  zoomNoHover,
 }) => {
   return (
     <Container
-      className={`storiesWrapper conteiner storiesWrapperCabecalho ${
-        mobile ? 'mobile' : 'desktop'
-      }`}
+      className={`storiesWrapper conteiner ${
+        local === 'cabecalho' ? 'storiesWrapperCabecalho' : ''
+      } ${mobile ? 'mobile' : 'desktop'}`}
       corPrincipal={corPrincipal}
       corControles={corControles}
       corSetasControles={corSetasControles}
@@ -23,7 +26,15 @@ const StoriesLI = ({
       <div className="storiesContainer">
         {data.map(item => (
           <div className="storiesItem cor-principal" key={item.id}>
-            <a aria-label={item.text} href={item.link} target="_blank">
+            <a
+              aria-label={item.text}
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`${zoomNoHover ? 'zoomOnHover' : ''} ${
+                instagramColor ? 'instagramColor' : ''
+              }`}
+            >
               {item.image ? <img src={item.image} alt={item.text} /> : ''}
               {item.text}
               {item.tag && (

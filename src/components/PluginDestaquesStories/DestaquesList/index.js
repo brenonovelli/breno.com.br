@@ -17,7 +17,12 @@ const DestaquesList = ({ data, setData, handleDeleted }) => {
 
       <div>
         {data.length > 0 ? (
-          <ReactSortable list={data} setList={setData}>
+          <ReactSortable
+            list={data}
+            setList={setData}
+            delayOnTouchOnly
+            handle=".handle"
+          >
             {data.map(item => (
               <DragableItem key={item.id}>
                 <div className="infos">
