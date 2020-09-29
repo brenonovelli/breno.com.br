@@ -48,7 +48,7 @@ const PreviewCode = ({ options, data, copied, setCopied }) => {
   window.userToken_B9DST = "${options.token}";
 </script>
 
-<script src="https://cdn.awsli.com.br/1606/1606323/arquivos/destaqueStories-v1.0.1-b9l.js"></script>
+<script src="https://cdn.awsli.com.br/1606/1606323/arquivos/destaqueStories-v1.0.2-b9l.js"></script>
 `.trim();
   }, [data, options]);
 
