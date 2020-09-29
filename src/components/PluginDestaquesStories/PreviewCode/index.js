@@ -9,8 +9,6 @@ const PreviewCode = ({ options, data, copied, setCopied }) => {
   const code = useMemo(() => {
     return `
 <script>
-  window.userToken_B9DST = "${options.token}";
-
   const storiesOptions = {
     apenasNoMobile: ${options.apenasNoMobile},
     apenasNaHome: ${options.apenasNaHome},
@@ -47,7 +45,11 @@ const PreviewCode = ({ options, data, copied, setCopied }) => {
   )}
   ];
 
-</script>`.trim();
+  window.userToken_B9DST = "${options.token}";
+</script>
+
+<script src="https://cdn.awsli.com.br/1606/1606323/arquivos/destaqueStories-v1.0.1-b9l.js"></script>
+`.trim();
   }, [data, options]);
 
   useEffect(() => {
