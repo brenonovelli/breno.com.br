@@ -40,8 +40,15 @@ const Values = () => (
         </ButtonLink>
 
         <p>
-          Gostaria de usar outra forma de pagamento? Fale comigo em
-          breno@breno.com.br.
+          Gostaria de usar outra forma de pagamento? Fale comigo em{' '}
+          <a
+            href="mailto:breno@breno.com.br"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            breno@breno.com.br.
+          </a>
+          .
         </p>
       </FormGroup>
     </div>
@@ -49,11 +56,18 @@ const Values = () => (
     <div className="column">
       <h2>E depois do pagamento?</h2>
       <p className="feature">
-        Após o pagamento, envie um e-mail para breno@breno.com.br com o
-        comprovante de pagamento e a URL da sua loja. Em até 48h você receberá o
-        script e seu token de uso para uma loja. Imagens, configurações e
-        ajustes além dos disponibilizados nessa página não estão inclusos no
-        valor de R$39,99.
+        Após o pagamento, envie um e-mail para{' '}
+        <a
+          href="mailto:breno@breno.com.br"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          breno@breno.com.br.
+        </a>{' '}
+        com o comprovante de pagamento e a URL da sua loja. Em até 48h você
+        receberá o script e seu token de uso para uma loja. Imagens,
+        configurações e ajustes além dos disponibilizados nessa página não estão
+        inclusos no valor de R$39,99.
       </p>
       <p>
         Esse plugin é feito com JavaScript moderno. Pode não ter suporte para
