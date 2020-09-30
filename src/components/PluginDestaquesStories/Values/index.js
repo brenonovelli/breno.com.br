@@ -46,7 +46,7 @@ const Values = () => (
             target="_blank"
             rel="noopener noreferrer"
           >
-            breno@breno.com.br.
+            breno@breno.com.br
           </a>
           .
         </p>
@@ -62,16 +62,17 @@ const Values = () => (
           target="_blank"
           rel="noopener noreferrer"
         >
-          breno@breno.com.br.
+          breno@breno.com.br
         </a>{' '}
         com o comprovante de pagamento e a URL da sua loja. Em até 48h você
-        receberá o script e seu token de uso para uma loja. Imagens,
-        configurações e ajustes além dos disponibilizados nessa página não estão
-        inclusos no valor de R$39,99.
+        receberá o seu token de uso para uma loja. Imagens, configurações e
+        ajustes além dos disponibilizados nessa página não estão inclusos no
+        valor de R$39,99.
       </p>
       <p>
-        Esse plugin é feito com JavaScript moderno. Pode não ter suporte para
-        alguns navegadores antigos.
+        Essa extensão é feita com JavaScript moderno. Pode não ter suporte para
+        alguns navegadores antigos. Seus ajustes e temas podem impactar no
+        comportamento da extensão.
       </p>
     </div>
   </>

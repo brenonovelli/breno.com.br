@@ -40,9 +40,9 @@ const Intro = ({ scrollToConfigSection }) => (
 
     <dl>
       <dt>Em breve</dt>
-      <dd>Badges com cores próprias.</dd>
+      <dd>Cronômetro nas tags.</dd>
+      <dd>Tags com cores próprias.</dd>
       <dd>Ordem randômica dos destaques.</dd>
-      <dd>Cronômetro nos badges. (Quando bater 50 vendas)</dd>
     </dl>
 
     <FormGroup>
@@ -55,7 +55,7 @@ const Intro = ({ scrollToConfigSection }) => (
       </ButtonLink>
 
       <ButtonLink
-        href="https://www.youtube.com/brenonovelli"
+        href="https://youtu.be/1-R-MmpXZKM"
         target="_blank"
         rel="noopener noreferrer"
       >
