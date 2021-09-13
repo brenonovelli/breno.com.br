@@ -12,25 +12,25 @@ const Values = () => (
         <h2>Gostou? Vejas como adquirir.</h2>
         <p>Pode usar cashback, usar seu cartão ou fazer transfência.</p>
         <ButtonLink
-          href="https://www.ame.plus/pague/4idXdltA6dLzeID6q0ksb8"
+          href="https://www.ame.plus/pague/3cNZEgyPuQGoQItBLxjtu9"
           template="ameDigital"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Cart />
-          Pagar com Ame R$ 39,99
+          Pagar com Ame R$ 59.99
         </ButtonLink>
         <ButtonLink
-          href="https://app.picpay.com/user/brenonovelli/39.99"
+          href="https://app.picpay.com/user/brenonovelli/59.99"
           template="picpay"
           target="_blank"
           rel="noopener noreferrer"
         >
           <Cart />
-          Pagar com PicPay R$ 39,99
+          Pagar com PicPay R$ 59.99
         </ButtonLink>
         <ButtonLink
-          href="https://nubank.com.br/pagar/5rduq/l8JGo8KnaP"
+          href="https://nubank.com.br/pagar/5rduq/Q7vL1jiZaB"
           template="nuconta"
           target="_blank"
           rel="noopener noreferrer"
@@ -67,7 +67,7 @@ const Values = () => (
         com o comprovante de pagamento e a URL da sua loja. Em até 48h você
         receberá o seu token de uso para uma loja. Imagens, configurações e
         ajustes além dos disponibilizados nessa página não estão inclusos no
-        valor de R$39,99.
+        valor de R$59.99.
       </p>
       <p>
         Essa extensão é feita com JavaScript moderno. Pode não ter suporte para
