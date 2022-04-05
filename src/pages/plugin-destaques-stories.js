@@ -14,6 +14,7 @@ import {
   DestaquesAdd,
   DestaquesOptions,
   PreviewCode,
+  UpdateCode,
 } from '../components/PluginDestaquesStories';
 
 import SEO from '../components/seo';
@@ -65,9 +66,26 @@ const PluginDestaquesStories = () => {
   };
 
   const handleSubmit = newData => {
-    const newItem = { ...newData, id: uuidv4() };
+    const { image, link } = newData;
+
+    const formattedLink = link.replace(/\s/gm, '%20');
+    const formattedImage = image.replace(/\s/gm, '%20');
+
+    const newItem = {
+      ...newData,
+      image: formattedImage,
+      link: formattedLink,
+      id: uuidv4(),
+    };
     setCopied(false);
     setData([...data, newItem]);
+  };
+
+  const handleUpdateCode = oldCode => {
+    const { settings, token, stories } = oldCode;
+
+    setOptions({ ...settings, token });
+    setData(stories.map(item => ({ ...item, id: uuidv4() })));
   };
 
   const scrollToConfigSection = () =>
@@ -142,6 +160,8 @@ const PluginDestaquesStories = () => {
             <span>copiar código</span> abaixo.
           </p>
         </header>
+
+        <UpdateCode handleUpdateCode={handleUpdateCode} />
 
         {/* .column */}
         <DestaquesList

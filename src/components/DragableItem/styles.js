@@ -21,6 +21,7 @@ export const Container = styled.div`
   overflow: hidden;
 
   width: 100%;
+  min-width: 360px;
 
   .infos {
     display: flex;
@@ -30,8 +31,14 @@ export const Container = styled.div`
     img {
       width: 2.5rem;
       height: 2.5rem;
+      min-width: 2.5rem;
+      min-height: 2.5rem;
       border-radius: 50%;
       object-fit: cover;
+      overflow: hidden;
+      background: var(--background);
+      font-size: 8px;
+      text-align: center;
     }
 
     strong {
@@ -40,6 +47,16 @@ export const Container = styled.div`
       width: 100%;
       text-overflow: ellipsis;
       overflow: hidden;
+
+      a {
+        display: inline-flex;
+        background: var(--highlight);
+        color: var(--background);
+        padding: 0.125rem 0.25rem;
+        border-radius: 0.25rem;
+        margin-bottom: 0.25rem;
+        font-size: 12px;
+      }
 
       span {
         display: block;

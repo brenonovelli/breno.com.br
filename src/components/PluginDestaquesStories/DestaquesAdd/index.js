@@ -27,7 +27,13 @@ const DestaquesAdd = ({ handleSubmit }) => {
               <Input id="link" type="text" name="link" />
             </FormGroup>
             <FormGroup>
-              <Label htmlFor="image">URL da imagem</Label>
+              <Label htmlFor="image">
+                URL da imagem
+                <span>
+                  Você pode usar imagens dos seus produtos ou usar o gerenciador
+                  de arquivos da própria Loja Integrada.
+                </span>
+              </Label>
               <Input id="image" type="text" name="image" required />
             </FormGroup>
             <FormGroup>

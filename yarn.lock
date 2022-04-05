@@ -4120,9 +4120,9 @@ cli-width@^2.0.0:
   integrity sha512-GRMWDxpOB6Dgk2E5Uo+3eEBvtOOlimMmpbFiKuLFnQzYDavtLFY3K5ona41jgN/WdRZtG7utuVSVTL4HbZHGkw==
 
 clipboard@^2.0.0:
-  version "2.0.6"
-  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.6.tgz#52921296eec0fdf77ead1749421b21c968647376"
-  integrity sha512-g5zbiixBRk/wyKakSwCKd7vQXDjFnAMGHoEyBogG/bw9kTD9GvdAvaoRR1ALcEzt3pVKxZR0pViekPMIS0QyGg==
+  version "2.0.10"
+  resolved "https://registry.yarnpkg.com/clipboard/-/clipboard-2.0.10.tgz#e61f6f7139ac5044c58c0484dcac9fb2a918bfd6"
+  integrity sha512-cz3m2YVwFz95qSEbCDi2fzLN/epEN9zXBvfgAoGkvGOJZATMl9gtTDVOtBYkx2ODUJl2kvmud7n32sV2BpYR4g==
   dependencies:
     good-listener "^1.2.2"
     select "^1.1.2"
@@ -5528,12 +5528,10 @@ download@^7.1.0:
     p-event "^2.1.0"
     pify "^3.0.0"
 
-dracula-prism@^1.2.1:
-  version "1.2.1"
-  resolved "https://registry.yarnpkg.com/dracula-prism/-/dracula-prism-1.2.1.tgz#6c4362478a2e9df9ec941af37e315c76b3dbcf79"
-  integrity sha512-f4hAWpAbLxDIac/fbKr7/1FRwjEV58EYCsDrrdmOY0CosAlMMPVNdsRvYJdgLGSkesvoH6NfneqsFzLU4FJxvw==
-  dependencies:
-    prismjs "^1.19.0"
+dracula-prism@^2.1.7:
+  version "2.1.7"
+  resolved "https://registry.yarnpkg.com/dracula-prism/-/dracula-prism-2.1.7.tgz#d251dd14a839d73fd9a44e4f1c94ffb897c0113f"
+  integrity sha512-u2tvMzuDFUOpqh8WIyFrIl229ftz2cRbrIsiK8Qc+3BfbAJiW8PeOpIBW4BW+SFPzYYAoRd9Oe3aCerGZa6ENA==
 
 duplexer3@^0.1.4:
   version "0.1.4"
@@ -12567,13 +12565,6 @@ pretty-error@^2.0.2, pretty-error@^2.1.1:
   dependencies:
     renderkid "^2.0.1"
     utila "~0.4"
-
-prismjs@^1.19.0:
-  version "1.21.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.21.0.tgz#36c086ec36b45319ec4218ee164c110f9fc015a3"
-  integrity sha512-uGdSIu1nk3kej2iZsLyDoJ7e9bnPzIgY0naW/HdknGj61zScaprVEVGHrPoXqI+M9sP0NDnTK2jpkvmldpuqDw==
-  optionalDependencies:
-    clipboard "^2.0.0"
 
 prismjs@^1.20.0:
   version "1.20.0"

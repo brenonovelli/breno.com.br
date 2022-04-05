@@ -90,14 +90,24 @@ export const Section = styled.section`
   margin: 0 auto;
 
   ${media.lessThan('large')`
-    padding: 1rem 0;
-  `}
+        padding: 1rem 0;
+  `} 
+
+  form{
+    width: 100%; 
+
+    textarea {
+        width: 100%;
+        height: 200px;
+    }
+  }
 
   &.copyCodeSection {
     pre {
       position: relative;
       max-width: 100vw;
       width: 100%;
+      background: var(--mediumBackground);
 
       ${media.lessThan('large')`
         overflow: visible;
@@ -109,6 +119,7 @@ export const Section = styled.section`
         font-size: 0.75rem;
         line-height: 1.25!important;
         display: block;
+        background: var(--mediumBackground);
 
         ${media.lessThan('large')`
         font-size: 0.675rem;
@@ -116,11 +127,14 @@ export const Section = styled.section`
       `}
       }
 
+
+
       .copyCode {
         position: absolute;
         top: 1rem;
         right: 1rem;
         margin: 0;
+        
 
         ${media.lessThan('large')`
           top: 0;

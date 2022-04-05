@@ -28,8 +28,20 @@ const DestaquesList = ({ data, setData, handleDeleted }) => {
                 <div className="infos">
                   <img src={item.image} alt="Imagem de destaque" />
                   <strong>
+                    {item.link && (
+                      <>
+                        <a
+                          href={item.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          title="Teste seu link"
+                        >
+                          Link
+                        </a>
+                        <br />
+                      </>
+                    )}
                     {item.text}
-                    {item.link && <span>Link: {item.link}</span>}
                     {item.badge && <span>Badge: {item.badge}</span>}
                     {item.tag && <span>Tag: {item.tag}</span>}
                   </strong>

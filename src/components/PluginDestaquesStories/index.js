@@ -5,6 +5,7 @@ import DeviceDesktop from './DeviceDesktop';
 import DestaquesList from './DestaquesList';
 import DestaquesAdd from './DestaquesAdd';
 import DestaquesOptions from './DestaquesOptions';
+import UpdateCode from './UpdateCode';
 import PreviewCode from './PreviewCode';
 import { allowedLocals } from './allowedLocals';
 import { defaultOptions } from './defaultOptions';
@@ -18,6 +19,7 @@ export {
   DestaquesList,
   DestaquesAdd,
   DestaquesOptions,
+  UpdateCode,
   PreviewCode,
   allowedLocals,
   defaultOptions,

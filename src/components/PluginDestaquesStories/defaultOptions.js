@@ -1,5 +1,5 @@
 export const defaultOptions = {
-  token: 'insira-seu-token',
+  token: null,
   apenasNoMobile: false,
   apenasNaHome: false,
   zoomNoHover: false,

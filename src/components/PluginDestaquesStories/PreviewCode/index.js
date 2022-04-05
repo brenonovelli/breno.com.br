@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo } from 'react';
+
 import Prism from 'prismjs';
+
 import { CopyToClipboard } from 'react-copy-to-clipboard';
 import { CopyAlt } from 'styled-icons/boxicons-regular/';
 
@@ -57,19 +59,21 @@ const PreviewCode = ({ options, data, copied, setCopied }) => {
   }, [options, data]);
 
   return (
-    <pre>
-      <div className="copyCode">
-        <CopyToClipboard text={code} onCopy={() => setCopied(true)}>
-          <Button type="button">
-            <CopyAlt />{' '}
-            {copied
-              ? 'Copiado. Agora cole no painel da loja.'
-              : 'Copiar o código'}
-          </Button>
-        </CopyToClipboard>
-      </div>
-      <code className="language-javascript">{code}</code>
-    </pre>
+    <>
+      <pre className="previewCode">
+        <div className="copyCode">
+          <CopyToClipboard text={code} onCopy={() => setCopied(true)}>
+            <Button type="button">
+              <CopyAlt />{' '}
+              {copied
+                ? 'Copiado. Agora cole no painel da loja.'
+                : 'Copiar o código'}
+            </Button>
+          </CopyToClipboard>
+        </div>
+        <code className="language-javascript">{code}</code>
+      </pre>
+    </>
   );
 };
 

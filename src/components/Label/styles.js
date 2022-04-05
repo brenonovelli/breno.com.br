@@ -42,7 +42,9 @@ export const Container = styled.label`
     }
   }
   > span {
-    color: var(--texts);
+    color: var(--highlight);
+    opacity: 0.5;
     font-size: 0.875rem;
+    margin-top: 0.25rem;
   }
 `;

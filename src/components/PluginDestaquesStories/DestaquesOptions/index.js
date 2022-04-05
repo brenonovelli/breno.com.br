@@ -143,6 +143,7 @@ const DestaquesOptions = ({
             type="text"
             name="token"
             onChange={handleChangeToken}
+            placeholder="insira-seu-token"
           />
         </FormGroup>
       </Form>

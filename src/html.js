@@ -17,7 +17,7 @@ export default function HTML(props) {
         />
         <link
           rel="stylesheet"
-          href="https://unpkg.com/dracula-prism/css/dracula-prism.css"
+          href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
         />
         {props.headComponents}
       </head>
