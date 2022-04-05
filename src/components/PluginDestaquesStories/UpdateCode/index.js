@@ -21,7 +21,7 @@ const UpdateCode = ({ handleUpdateCode }) => {
         return null;
 
       default:
-        return value ? value.replace(/"/gm, '') : value;
+        return value ? value.replace(/"/gm, '').trim() : value;
     }
   };
 
@@ -29,7 +29,7 @@ const UpdateCode = ({ handleUpdateCode }) => {
     formData.split(',').reduce((acc, item) => {
       const [key, value] = item.split(':');
 
-      return { ...acc, [key]: getValue(value) };
+      return { ...acc, [key.trim()]: value ? getValue(value.trim()) : value };
     }, {});
 
   const handleStories = formData =>
@@ -39,8 +39,10 @@ const UpdateCode = ({ handleUpdateCode }) => {
       const story = storyRaw.reduce((acc, storyItem) => {
         const [key, value] = storyItem.split(/:(.*)/s);
 
-        return { ...acc, [key]: getValue(value) };
+        return { ...acc, [key.trim()]: value ? getValue(value.trim()) : value };
       }, {});
+
+      const validKeys = ['image', 'link', 'tag', 'text', 'badge'];
 
       return story;
     });
@@ -48,9 +50,8 @@ const UpdateCode = ({ handleUpdateCode }) => {
   const handleSubmit = formData => {
     const pattern = /[^{}]+(?=})/g;
 
-    const plainText = formData.code
-      .replace(/(\r\n|\n|\r)/gm, '')
-      .replace(/\s/gm, '');
+    const plainText = formData.code.replace(/(\r\n|\n|\r)/gm, '');
+    // .replace(/\s/gm, '');
 
     const [settingsRaw = null, ...storiesRaw] = plainText.match(pattern);
 
@@ -60,11 +61,13 @@ const UpdateCode = ({ handleUpdateCode }) => {
 
     const token =
       plainText.slice(
-        plainText.indexOf('B9DST="') + 7,
+        plainText.indexOf('B9DST = "') + 9,
         plainText.lastIndexOf('";')
       ) || null;
 
     const currentSettigns = { settings, stories, token };
+
+    console.log(currentSettigns);
 
     setIsOpen(s => !s);
 
